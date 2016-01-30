@@ -29,3 +29,7 @@ a branch is a segregated copy of a project tree (ex: trunk/svnptroj)
 Copying this directory should be completed on the server, this is a constant-time operation, and it's
 the way most people create branches. 
 You now can checkout a new working copy to begin working with it.
+
+Question #7 "How many branches can you have at any given time?"
+Answer
+Unlimited number of branches are allowed
