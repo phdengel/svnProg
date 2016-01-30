@@ -44,3 +44,7 @@ svn status
 Question #10 "How long are branches in svn supposed to exist?"
 Answer
 branches last until deleted; they will still be seen in earlier revisions when using svn checkout, svn switch or svn list.
+
+Question #11 "How do you merge branches?"
+Answer
+using various invocations of the svn merge subcommand. ex: svn merge <URL>
