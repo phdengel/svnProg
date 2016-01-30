@@ -1,0 +1,5 @@
+Question #1 "What are the differences between git and svn?"
+Answer 
+Git is a distributed VCS and SVN(subversion) is a centralized VCS
+Git uses a peer-to-peer approach and holds a copy of the entire repository on the local machine whereas
+svn uses a server/client approach and only stores a copy of the repository files (located on a server) in a working copy(directory) on the client(local machine). There are other differences as well. 
