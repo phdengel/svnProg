@@ -22,3 +22,10 @@ Question #5 "How do you add files to the repository?"
 Answer
 After creating file in Working Copy(WC) -> run svn add <name of file> which only schedules file to be added torepository (this changes the ? to A in front of file when svn status is run)
 Once add is completed -> run svn commit <name of file> -m "log message" (log message using -m switch) which commits file to repository.
+
+Question #6 "How are branches handled in svn?"
+Answer
+a branch is a segregated copy of a project tree (ex: trunk/svnptroj)
+Copying this directory should be completed on the server, this is a constant-time operation, and it's
+the way most people create branches. 
+You now can checkout a new working copy to begin working with it.
