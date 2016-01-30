@@ -17,3 +17,8 @@ tory)?"
 Answer
 -> run svn import command to upload your directory/files to repository. # this places local files in respository and begin tracking changes under svn control.
 -> run svn checkout # this gets you the working copy of repository files to start dev work on local machine changes now tracked by svn
+
+Question #5 "How do you add files to the repository?"
+Answer
+After creating file in Working Copy(WC) -> run svn add <name of file> which only schedules file to be added torepository (this changes the ? to A in front of file when svn status is run)
+Once add is completed -> run svn commit <name of file> -m "log message" (log message using -m switch) which commits file to repository.
