@@ -33,3 +33,7 @@ You now can checkout a new working copy to begin working with it.
 Question #7 "How many branches can you have at any given time?"
 Answer
 Unlimited number of branches are allowed
+
+Question #8 "What does your local copy of a repository look like with svn?"
+Answer
+It looks like any other directory structure on a local machine; full of files and subdirectories, etc.
