@@ -47,4 +47,9 @@ branches last until deleted; they will still be seen in earlier revisions when u
 
 Question #11 "How do you merge branches?"
 Answer
-using various invocations of the svn merge subcommand. ex: svn merge <URL>
+using various invocations of the svn merge subcommand for example svn merge<URL>
+
+Question #12 "Why was svn created?"
+Answer
+As a replacement for CVS <Concurrent Versions System>
+
