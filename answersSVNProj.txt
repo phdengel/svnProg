@@ -37,3 +37,6 @@ Unlimited number of branches are allowed
 Question #8 "What does your local copy of a repository look like with svn?"
 Answer
 It looks like any other directory structure on a local machine; full of files and subdirectories, etc.
+
+Question #9 "How do you check the status of the les you are presently working on?"
+svn status
