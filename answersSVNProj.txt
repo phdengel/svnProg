@@ -7,3 +7,8 @@ svn uses a server/client approach and only stores a copy of the repository files
 Question #2 "How are commits handled in svn?"
 Answer
 the commit sends all changes made to files in the working copy on local machine to repository which is on the server
+
+Question #3 "How are check outs performed in svn?"
+Answer
+My example I used this -->$ svn checkout https://github.com/phdengel/svnProg.git
+
