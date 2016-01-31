@@ -70,3 +70,12 @@ Question #15 "How do we view the past of a project with svn?"
 Answer
 Several commands can provide you with historical data from the repository: svn diff; svn log; svn cat; 
 svn annotate; svn list
+
+Question #16 "If there was a mistake made in the past of a project, how should we go about
+correcting that mistake in svn?"
+Answer
+Basically you need to "merge backwards";
+So for example to go from revision 150 (current) back to revision 140:
+svn update
+svn merge -r 150:140 .
+svn commit -m "Rolled back to r140"
