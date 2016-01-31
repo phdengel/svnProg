@@ -99,3 +99,10 @@ Committed revision 1.
 This still leaves files on local directory that you just imported into repository is still unversioned.
 To begin working on that data in a versioned fashion, you still need to create a fresh working copy of 
 that tree. that is accomplished by running svn co (checkout) to get a workingCopy which then creates .svn for the workingCopy directory (local repository)
+
+Question #18 "Can the client/server setup required with svn exist on the same computer?"
+Answer
+YES, after subversion is installed on a machine, that machine becomes the client and it also becomes the 
+server when the repository is created and stored on that machine.
+The repository makes the machine a server, and the server is where the repository is stored even 
+if they are on the same machine, both the client and the server.
