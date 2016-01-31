@@ -65,3 +65,8 @@ Answer
 Question #14 "What was the design criteria for svn?"
 Answer
 write a new version control system from scratch;but the developers didn't want to break new ground in version control methodology, they just wanted to fix CVS. They decided that Subversion would match CVS's features and preserve the same development model, but not duplicate CVS's most obvious flaws. 
+
+Question #15 "How do we view the past of a project with svn?"
+Answer
+Several commands can provide you with historical data from the repository: svn diff; svn log; svn cat; 
+svn annotate; svn list
