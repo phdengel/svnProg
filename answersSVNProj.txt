@@ -79,3 +79,23 @@ So for example to go from revision 150 (current) back to revision 140:
 svn update
 svn merge -r 150:140 .
 svn commit -m "Rolled back to r140"
+
+Question #17 "If you have an existing project and want to start tracking it with svn, how
+do you copy your existing files to the repository the first time? Does this
+create the .svn directory in your local folder?"
+Answer
+short answer-- you run svn add <fileName> or svn import then svn commit with args;
+better example from the red-bean book:
+"The svn import command is a quick way to copy an unversioned tree of files into a repository, creating intermediate directories as necessary. svn import doesn't require a working copy, and your files are immediately committed to the repository. You typically use this when you have an existing tree of files that you want to begin tracking in your Subversion repository."
+ For example:
+$ svn import /path/to/mytree \
+             http://svn.example.com/svn/repo/some/project \
+             -m "Initial import"
+Adding         mytree/foo.c
+Adding         mytree/bar.c
+Adding         mytree/subdir
+Adding         mytree/subdir/quux.h
+Committed revision 1.
+This still leaves files on local directory that you just imported into repository is still unversioned.
+To begin working on that data in a versioned fashion, you still need to create a fresh working copy of 
+that tree. that is accomplished by running svn co (checkout) to get a workingCopy which then creates .svn for the workingCopy directory (local repository)
