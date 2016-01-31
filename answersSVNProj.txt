@@ -106,3 +106,8 @@ YES, after subversion is installed on a machine, that machine becomes the client
 server when the repository is created and stored on that machine.
 The repository makes the machine a server, and the server is where the repository is stored even 
 if they are on the same machine, both the client and the server.
+
+Question #19 "Did SVN provide any difference in tools between how you do server side
+commands and client side commands?"
+Answer
+YES; std. svn commands on client side for example; svn add; svn commit; on the server side, svnadmin is the administrative tool for monitoring and repairing your Subversion repository. Since svnadmin works via direct repository access (and thus can only be used on the machine that holds the repository), it refers to the repository with a path, not a URL. It has a vast number of options.
