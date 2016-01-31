@@ -61,3 +61,7 @@ Answer
 4) Fix your mistakes;
 5) Resolve any conflicts (merge others' changes);
 6) Publish (commit) your changes; repeat Step 1;
+
+Question #14 "What was the design criteria for svn?"
+Answer
+write a new version control system from scratch;but the developers didn't want to break new ground in version control methodology, they just wanted to fix CVS. They decided that Subversion would match CVS's features and preserve the same development model, but not duplicate CVS's most obvious flaws. 
